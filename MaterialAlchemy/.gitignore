@@ -1,0 +1,29 @@
+# .NET build output
+**/bin/
+**/obj/
+
+# Local packaged build output
+dist/
+
+# Visual Studio and local IDE files
+.vs/
+*.user
+*.suo
+*.userprefs
+
+# JetBrains Rider
+.idea/
+
+# Generated and local tooling files
+*.log
+*.tmp
+*.bak
+
+# Local Elin/BepInEx configuration
+BepInEx/config/
+**/m32.material_alchemy.cfg
+
+# OS metadata
+Thumbs.db
+desktop.ini
+.DS_Store

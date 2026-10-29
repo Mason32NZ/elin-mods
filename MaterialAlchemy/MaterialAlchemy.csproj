@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>MaterialAlchemy</AssemblyName>
+    <RootNamespace>MaterialAlchemy</RootNamespace>
+    <ElinPath>C:\Program Files (x86)\Steam\steamapps\common\Elin</ElinPath>
+    <PackageOutput>$(MSBuildProjectDirectory)\dist\MaterialAlchemy</PackageOutput>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BepInEx.Core">
+      <HintPath>$(ElinPath)\BepInEx\core\BepInEx.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx.Unity">
+      <HintPath>$(ElinPath)\BepInEx\core\BepInEx.Unity.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(ElinPath)\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Elin">
+      <HintPath>$(ElinPath)\Elin_Data\Managed\Elin.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Plugins.BaseCore">
+      <HintPath>$(ElinPath)\Elin_Data\Managed\Plugins.BaseCore.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Plugins.UI">
+      <HintPath>$(ElinPath)\Elin_Data\Managed\Plugins.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(ElinPath)\Elin_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(ElinPath)\Elin_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(ElinPath)\Elin_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <Target Name="CreateModPackage" AfterTargets="Build">
+    <MakeDir Directories="$(PackageOutput)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(PackageOutput)" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\package.xml" DestinationFolder="$(PackageOutput)" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\preview.jpg" DestinationFolder="$(PackageOutput)" />
+  </Target>
+</Project>
