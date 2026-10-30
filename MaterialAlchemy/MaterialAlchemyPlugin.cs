@@ -12,7 +12,7 @@ internal static class ModInfo
 {
     internal const string Guid = "m32.material_alchemy";
     internal const string Name = "Material Alchemy";
-    internal const string Version = "2026.07.19.2"; //yyyy.mm.dd.v
+    internal const string Version = "2026.10.31.1"; //yyyy.mm.dd.v
 }
 
 internal sealed class RecipeDefinition

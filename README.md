@@ -62,11 +62,11 @@ Every recipe can be enabled or disabled in `BepInEx/config/m32.material_alchemy.
 
 The Material Hammer recipe is disabled by default. Its ingot requirement is also configurable and defaults to 10.
 
-For in-game configuration, use [Mod Config GUI](https://steamcommunity.com/sharedfiles/filedetails/?id=3379819704).
+For in-game configuration, use the mod config UI built into Elin 0.23.352 and later. On older versions, use [Mod Config GUI](https://steamcommunity.com/sharedfiles/filedetails/?id=3379819704).
 
 ## Compatibility
 
-- Built for Elin 0.23.325
-- Requires BepInEx 5
+- Built for Elin 0.23.355
+- Requires BepInEx 6.0.0-pre.1 (the version used by Elin mods; BepInEx 5 will not load it)
 - Does not replace or edit vanilla recipes
 - May conflict with other mods that patch the same crafting or recipe UI methods

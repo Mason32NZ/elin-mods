@@ -4,7 +4,7 @@
   <id>m32.material_alchemy</id>
   <author>Mason32NZ</author>
   <loadPriority>100</loadPriority>
-  <version>0.23.325</version>
+  <version>0.23.355</version>
   <tags>General,Utility</tags>
   <description>Adds configurable material conversion recipes to crafting stations.</description>
   <builtin>false</builtin>
