@@ -27,3 +27,7 @@ BepInEx/config/
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# OpenCode
+.opencode/
+opencode.json

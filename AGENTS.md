@@ -6,9 +6,18 @@ Material Alchemy is an Elin BepInEx plugin that adds configurable, non-overwriti
 
 - Plugin GUID: `m32.material_alchemy`
 - Plugin name: `Material Alchemy`
-- Project file: `MaterialAlchemy.csproj`
-- Workshop package metadata: `package.xml`
-- Workshop thumbnail: `preview.jpg`
+- Project file: `MaterialAlchemy/MaterialAlchemy.csproj`
+- Plugin source: `MaterialAlchemy/MaterialAlchemyPlugin.cs`
+- Workshop package metadata: `MaterialAlchemy/package.xml`
+- Workshop thumbnail: `MaterialAlchemy/preview.jpg`
+- Workshop description: `MaterialAlchemy/workshop.bbcode`
+
+## Repository Layout
+
+- `README.md` contains the player-facing overview, recipe list, and configuration notes.
+- `AGENTS.md` contains contributor and coding agent instructions.
+- `MaterialAlchemy/` contains the plugin source and Workshop package files.
+- Build output is written to `MaterialAlchemy/dist/MaterialAlchemy/`.
 
 ## Build
 
@@ -18,7 +27,7 @@ Build the release package from the repository root with:
 dotnet build MaterialAlchemy/MaterialAlchemy.csproj --configuration Release
 ```
 
-The build copies the DLL, `package.xml`, and `preview.jpg` into `dist/MaterialAlchemy/`.
+The build copies the DLL, `package.xml`, and `preview.jpg` into `MaterialAlchemy/dist/MaterialAlchemy/`.
 
 ## Elin Compatibility
 
